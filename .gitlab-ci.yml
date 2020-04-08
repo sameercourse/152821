@@ -1,0 +1,16 @@
+.tests:
+    stage: test
+    only:
+        - testbranch
+
+job1:
+    extends: .tests
+    script: echo "hi"
+
+job2:
+    extends: .tests
+    script: echo "hi"
+    
+    
+ 
+
